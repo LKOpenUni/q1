@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Wireframe - Account</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<header>
+    <div class="top-bar">
+        <div class="account-dropdown">
+            <div class="account-icon">👤</div>
+            <div class="dropdown-menu">
+                <a href="account.html">Settings</a>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-bar">
+        <a href="hikeevents.html">Hike Events</a>
+        <a href="otherevents.html">Other Events</a>
+        <a href="membership.html">Membership</a>
+        <a href="newsitems.html">News Items</a>
+        <a href="annoucements.html">Announcements</a>
+    </nav>
+</header>
+
+<main class="account-layout">
+    <!-- Admin Info -->
+    <section class="box">
+        <h2>Admin Profile</h2>
+        <div class="form-wrapper">
+            <label>Email: <input type="text" value="admin@example.com" disabled /></label>
+            <label>Role: <input type="text" value="Administrator" disabled /></label>
+            <label>Last Login: <input type="text" value="25 May 2025, 11:45 AM" disabled /></label>
+        </div>
+    </section>
+
+    <!-- Security Settings -->
+    <section class="box">
+        <h2>Security Settings</h2>
+        <form class="form-wrapper">
+            <label>Current Password: <input type="password" /></label>
+            <label>New Password: <input type="password" /></label>
+            <label>Confirm New Password: <input type="password" /></label>
+            <label class="checkbox-inline">
+                <input type="checkbox" />
+                <span>Enable Two-Factor Authentication</span>
+            </label>
+            <button type="button">Update Security Settings</button>
+        </form>
+    </section>
+
+    <!-- Current Admin Staff -->
+    <section class="box">
+        <h2>Staff with Access</h2>
+        <div class="scroll-box">
+            <div class="request-item">
+                <span>Lyle Kay - lyle.kay@ou.ac.uk – Admin</span>
+                <div class="actions">
+                    <button>Remove Access</button>
+                </div>
+            </div>
+            <div class="request-item">
+                <span>James Lee – james@club.org – Editor</span>
+                <div class="actions">
+                    <button>Remove Access</button>
+                </div>
+            </div>
+            <div class="request-item">
+                <span>Sophie Chan – sophie@club.org – Admin</span>
+                <div class="actions">
+                    <button>Remove Access</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
+

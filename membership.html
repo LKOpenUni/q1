@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Wireframe</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<header>
+    <div class="top-bar">
+        <div class="account-dropdown">
+            <div class="account-icon">👤</div>
+            <div class="dropdown-menu">
+                <a href="account.html">Settings</a>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-bar">
+        <a href="hikeevents.html">Hike Events</a>
+        <a href="otherevents.html">Other Events</a>
+        <a href="membership.html">Membership</a>
+        <a href="newsitems.html">News Items</a>
+        <a href="annoucements.html">Announcements</a>
+    </nav>
+</header>
+
+<main class="membership-layout">
+    <!-- Add / Edit Member -->
+    <section class="box">
+        <h2>Add Member</h2>
+        <div class="form-scroll">
+            <form class="form-wrapper">
+                <label>Forename: <input type="text" /></label>
+                <label>Surname: <input type="text" /></label>
+                <label>Date of Birth: <input type="text" /></label>
+                <label>Email Address: <input type="text" /></label>
+                <label>Phone Number: <input type="text" /></label>
+                <label>Home Address: <input type="text" /></label>
+                <label>Emergency Contact: <input type="text" /></label>
+                <label>Password: <input type="text" /></label>
+                <label>Membership Option:
+                    <select>
+                        <option>Standard</option>
+                        <option>Student</option>
+                        <option>Senior</option>
+                    </select>
+                </label>
+                <label>Preferred Payment Method:
+                    <select>
+                        <option>Card</option>
+                        <option>PayPal</option>
+                        <option>Cash</option>
+                    </select>
+                </label>
+                <label>Auto Renewal:
+                    <select>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </label>
+                <label>Email Consent:
+                    <select>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </label>
+                <button type="button">Save Changes</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- New Member Requests -->
+    <section class="box">
+        <h2>New Member Requests</h2>
+        <div class="scroll-box">
+            <div class="request-item">
+                <span>Holly Legget – Joined: 20/05/2025</span>
+                <div class="actions">
+                    <button>Approve</button>
+                    <button>Reject</button>
+                </div>
+            </div>
+            <div class="request-item">
+                <span>Jessica Lo – Joined: 18/05/2025</span>
+                <div class="actions">
+                    <button>Approve</button>
+                    <button>Reject</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Members -->
+    <section class="box">
+        <h2>Current Members</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Search members..." />
+        </div>
+        <div class="scroll-box">
+            <div class="request-item">
+                <span>Olivia Green – Active</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button>Mark Inactive</button>
+                </div>
+            </div>
+            <div class="request-item">
+                <span>Noah White – Inactive</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button>Mark Active</button>
+                </div>
+            </div>
+            <div class="request-item">
+                <span>Liam Clarke – Active</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button>Mark Inactive</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

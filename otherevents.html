@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Wireframe</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<header>
+    <div class="top-bar">
+        <div class="account-dropdown">
+            <div class="account-icon">👤</div>
+            <div class="dropdown-menu">
+                <a href="account.html">Settings</a>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-bar">
+        <a href="hikeevents.html">Hike Events</a>
+        <a href="otherevents.html">Other Events</a>
+        <a href="membership.html">Membership</a>
+        <a href="newsitems.html">News Items</a>
+        <a href="annoucements.html">Announcements</a>
+    </nav>
+</header>
+<main class="events-layout">
+    <!-- Create/Edit Event -->
+    <section class="box">
+        <h2>Create / Edit Event</h2>
+        <div class="form-scroll">
+            <form class="form-wrapper">
+                <label>Event Name: <input type="text" /></label>
+                <label>Date: <input type="text" /></label>
+                <label>Type: <input type="text" /></label>
+                <label>Start Time: <input type="text" /></label>
+                <label>Duration: <input type="text" /></label>
+                <label>Location: <input type="text" /></label>
+                <label>Cost: <input type="text" /></label>
+                <label>Max Group Size: <input type="text" /></label>
+                <label>Contact Person: <input type="text" /></label>
+                <button type="button">Save Event</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Social Events List -->
+    <section class="box">
+        <h2>All Events</h2>
+        <div class="scroll-box">
+            <div class="request-item">
+                <span>Freshers Fair– 12/06/2025 – Type: Volunteer</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+            <div class="request-item">
+                <span>OU Hiking Night Out – 20/06/2025 – Type: Social</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+            <div class="request-item">
+                <span>Charity Hike – 30/06/2025 – Type: Fundraiser</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
