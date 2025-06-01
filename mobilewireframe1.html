@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hike Events - Mobile Wireframe</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    body {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .phone-frame {
+      position: relative;
+      width: 375px;
+      height: 812px;
+      background: url("images/pngtree-iphone-mockup-with-blank-screen-on-transparent-background-png-image_13279256.png") no-repeat center center;
+      background-size: cover;
+    }
+
+    .mobile-screen {
+      position: absolute;
+      top: 95px; /* adjust to align with phone screen area */
+      left: 20px;
+      width: 335px;
+      height: 620px;
+      overflow-y: scroll;
+      background: white;
+      border-radius: 20px;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-screen * {
+      font-size: 14px;
+    }
+
+    .nav-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="phone-frame">
+  <div class="mobile-screen">
+    <header>
+      <div class="top-bar">
+        <div class="account-dropdown">
+          <div class="account-icon">👤</div>
+          <div class="dropdown-menu">
+            <a href="account.html">Settings</a>
+          </div>
+        </div>
+      </div>
+      <nav class="nav-bar">
+        <a href="hikeevents.html">Hike Events</a>
+        <a href="otherevents.html">Other Events</a>
+        <a href="membership.html">Membership</a>
+        <a href="newsitems.html">News Items</a>
+        <a href="annoucements.html">Announcements</a>
+      </nav>
+    </header>
+    <main class="grid-container">
+      <section class="box">
+        <h2>Calendar</h2>
+        <div class="calendar-nav">
+          <span>&lt;</span>
+          <strong>June 2025</strong>
+          <span>&gt;</span>
+        </div>
+        <div class="calendar-mock">
+          <p>[ Calendar Placeholder ]</p>
+        </div>
+      </section>
+
+      <section class="box">
+        <h2>Add Hike</h2>
+        <div class="form-scroll">
+          <form class="form-wrapper">
+            <label>Name of Hike: <input type="text" /></label>
+            <label>Type: <input type="text" /></label>
+            <label>Date of Hike: <input type="text" /></label>
+            <label>Start Time: <input type="text" /></label>
+            <label>Average Duration: <input type="text" /></label>
+            <label>Meeting Point: <input type="text" /></label>
+            <label>Terrain: <input type="text" /></label>
+            <label>Ascent in m: <input type="text" /></label>
+            <label>Maximum Group Size: <input type="text" /></label>
+            <label>Name of Leader: <input type="text" /></label>
+            <label>Contact Number: <input type="text" /></label>
+            <label>Status: <input type="text" /></label>
+            <button type="button">Add to Calendar</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="box">
+        <h2>Upcoming Hikes</h2>
+        <div class="scroll-box">
+          <div class="request-item">
+            <span>Snowdon Trail – 05/06/2025 – Lead: Phil Wathern</span>
+            <div class="actions">
+              <button>Edit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="box">
+        <h2>Requested Hikes</h2>
+        <div class="scroll-box">
+          <div class="request-item">
+            <span>Snowdon Summit Request | Requested by Lyle Kay</span>
+            <div class="actions">
+              <button>Approve</button><button>Reject</button><button>Edit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+</body>
+</html>
